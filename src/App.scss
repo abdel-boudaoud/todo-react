@@ -1,0 +1,66 @@
+.App {
+    background-color: #252525;
+    width: 350px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    input {
+        background-color: grey;
+        padding: 10px;
+        margin-right: 20px;
+        width: 100%;
+        // color: white;
+        font-weight: 400;
+        font-size: 19px;
+        &:focus{
+            outline: none;
+        }
+        &::placeholder{
+            color: white;
+        }
+    }
+    .Control {
+        width: 100%;
+
+        form {
+            display: flex;
+            flex-direction: row;
+            
+            button{
+                background-color: gray;
+                width: 100px;
+                color: white;
+                
+            }
+            
+        }
+        p{
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+        }
+    }
+
+    .tasks{
+        display: flex;
+        flex-direction: column;
+        .task{
+            background-color: white;
+            margin: 10px 0 10px 0;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+
+            button{
+                margin-right: 5px;
+            }
+
+        }
+        
+    }
+}
